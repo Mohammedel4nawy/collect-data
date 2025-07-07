@@ -148,7 +148,7 @@ if (localStorage.getItem("dataArray")) {
 
     liLink.className = "col-1";
 
-    liLink.innerHTML = `<a href="${data.link}" target="_blank">${data.link}</a>`;
+    liLink.innerHTML = `<a href="${data.link}" target="_blank">link</a>`;
 
     liLink.setAttribute("data-type", "link");
 
@@ -314,7 +314,7 @@ btn.addEventListener("click", function () {
 
     liLink.className = "col-1";
 
-    liLink.innerHTML = `<a href="${data.link}" target="_blank">${data.link}</a>`;
+    liLink.innerHTML = `<a href="${data.link}" target="_blank">link</a>`;
 
     liLink.setAttribute("data-type", "link");
 
@@ -407,6 +407,7 @@ btn.addEventListener("click", function () {
 
     ul.appendChild(editBtn);
     //----------------------------------------------------------------------
+
     // Append the ul to the content div
     content.appendChild(ul);
 
