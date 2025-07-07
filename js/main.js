@@ -104,7 +104,7 @@ if (localStorage.getItem("dataArray")) {
     let ul = document.createElement("ul");
 
     ul.className =
-      "list-unstyled d-flex flex-wrap justify-content-between text-center text-capitalize fw-bold size-5 py-2 border border-1 rounded-2 mb-3";
+      "list-unstyled d-flex flex-wrap justify-content-between text-center text-capitalize fw-bold size-5 py-2 border border-1 rounded-2 mb-3 align-items-center";
 
     let liNum = document.createElement("li");
 
@@ -264,7 +264,7 @@ btn.addEventListener("click", function () {
     let ul = document.createElement("ul");
 
     ul.className =
-      "list-unstyled d-flex flex-wrap justify-content-between text-center text-capitalize fw-bold size-5  py-2 border border-1 rounded-2 mb-3";
+      "list-unstyled d-flex flex-wrap justify-content-between text-center text-capitalize fw-bold size-5  py-2 border border-1 rounded-2 mb-3 align-items-center";
     ul.classList.add("wow", "animate__fadeInUp");
     ul.setAttribute("data-wow-duration", "1s");
 
