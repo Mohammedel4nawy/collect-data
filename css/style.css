@@ -7,12 +7,17 @@ input {
   text-align: center;
   font-weight: bold;
   font-size: 16px;
-  color: black;
+  color: white;
+  background-color: white;
   border: 1px solid black;
   text-transform: uppercase;
+  outline: none;
+}
+input:focus{
+  outline: none;
 }
 .data {
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   overflow: auto;
 }
 button{
