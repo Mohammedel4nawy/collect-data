@@ -87,7 +87,7 @@ let Note = document.querySelector(".notes");
 let btn = document.querySelector(".btn-outline-success");
 let btnEdit = document.querySelector(".btn-outline-primary");
 let inputs = document.querySelectorAll("input");
-
+let search = document.querySelector(".search");
 //intialise a data array
 
 let dataArray = [];
@@ -434,4 +434,22 @@ ul.forEach((item, i) => {
     item.classList.add("wow", "animate__fadeInUp");
     item.setAttribute("data-wow-duration", "1s");
   }
+});
+
+// Add search functionality
+search.addEventListener("keyup", function () {
+  let searchValue = search.value.toLowerCase();
+  let ulElements = document.querySelectorAll(".data ul");
+  ulElements.forEach((ul) => {
+    let liType = ul.querySelector("li[data-type='type']");
+    if (liType) {
+      if (liType.textContent.toLowerCase().includes(searchValue)) {
+        ul.classList.remove("d-none");
+      } else {
+        ul.classList.add("d-none");
+      }
+    } else {
+      return null;
+    }
+  });
 });
